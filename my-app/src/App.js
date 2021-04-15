@@ -4,18 +4,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello World!</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with Sazzad
-        </a>
-      </header>
+      <h1>Md. Sazzad Ali Shakh</h1>
+      <h2>Total Letter Count {3 + 6 + 3 + 5}</h2>
     </div>
   );
 }
