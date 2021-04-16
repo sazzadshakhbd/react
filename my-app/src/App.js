@@ -8,8 +8,6 @@ function App() {
     <div className="App">
       <Hello name="Saleh" age="20" living="Dhaka"></Hello>
       <Welcome name="React"></Welcome>
-      <Welcome name="javascript"></Welcome>
-      <Welcome name="Flexbox"></Welcome>
     </div>
   );
 }
