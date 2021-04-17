@@ -1,17 +1,18 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Hello from "./mycomponents/Hello";
-import Welcome from "./mycomponents/Welcome";
-import MyButton from "./mycomponents/MyButton";
-import Arrow from "./mycomponents/Arrow";
+import Hello from "./myComponents/Hello";
+import Welcome from "./myComponents/Welcome";
+import MyButton from "./myComponents/MyButton";
+import Arrow from "./myComponents/Arrow";
+import State from "./myComponents/State";
 
 function App() {
   return (
     <div className="App">
-      <Hello name="Saleh" age="20" living="Dhaka"></Hello>
+      <Hello name="Rachis" age="20" living="Dhaka"></Hello>
       <Welcome name="React"></Welcome>
       <MyButton></MyButton>
       <Arrow />
+      <State></State>
     </div>
   );
 }
