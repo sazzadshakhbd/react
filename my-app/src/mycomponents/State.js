@@ -3,13 +3,13 @@ import React, { Component } from "react";
 class State extends Component {
   constructor() {
     super();
-
-    this.state = {
+    let stateVar = {
       name: "Sazzad",
       age: "37",
       location: "Rajbari",
       gender: "Male",
     };
+    this.state = stateVar;
   }
   render() {
     return (
