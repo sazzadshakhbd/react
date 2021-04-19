@@ -4,6 +4,7 @@ import Welcome from "./myComponents/Welcome";
 import MyButton from "./myComponents/MyButton";
 import Arrow from "./myComponents/Arrow";
 import State from "./myComponents/State";
+import SetState from "./myComponents/SetState";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <MyButton></MyButton>
       <Arrow />
       <State></State>
+      <SetState></SetState>
     </div>
   );
 }
