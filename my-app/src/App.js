@@ -6,6 +6,7 @@ import Arrow from "./myComponents/Arrow";
 import State from "./myComponents/State";
 import SetState from "./myComponents/SetState";
 import Condition from "./myComponents/conditions";
+import VarElements from "./myComponents/VarElements";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <State></State>
       <SetState></SetState>
       <Condition />
+      <VarElements />
     </div>
   );
 }
