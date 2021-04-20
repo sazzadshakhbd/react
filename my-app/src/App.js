@@ -5,6 +5,7 @@ import MyButton from "./myComponents/MyButton";
 import Arrow from "./myComponents/Arrow";
 import State from "./myComponents/State";
 import SetState from "./myComponents/SetState";
+import Condition from "./myComponents/conditions";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Arrow />
       <State></State>
       <SetState></SetState>
+      <Condition />
     </div>
   );
 }
