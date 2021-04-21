@@ -1,10 +1,10 @@
 import "./App.css";
-import ReactDomRender from "./myComponents/ReactDomRender";
+import FindDomeNode from "./myComponents/FindDomeNode";
 
 function App() {
   return (
     <div className="App">
-      <ReactDomRender />
+      <FindDomeNode />
     </div>
   );
 }
