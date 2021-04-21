@@ -1,10 +1,10 @@
 import "./App.css";
-import Refresh from "./myComponents/Refresh";
+import ReactDomRender from "./myComponents/ReactDomRender";
 
 function App() {
   return (
     <div className="App">
-      <Refresh />
+      <ReactDomRender />
     </div>
   );
 }
