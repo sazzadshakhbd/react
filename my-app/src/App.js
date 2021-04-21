@@ -1,10 +1,10 @@
 import "./App.css";
-import FindDomeNode from "./myComponents/FindDomeNode";
+import Form from "./myComponents/Form";
 
 function App() {
   return (
     <div className="App">
-      <FindDomeNode />
+      <Form />
     </div>
   );
 }
