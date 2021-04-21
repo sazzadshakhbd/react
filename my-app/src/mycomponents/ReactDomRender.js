@@ -9,7 +9,7 @@ class ReactDomRender extends Component {
     let callBack = function () {
       alert("Hi! I am Callback Function");
     };
-    ReactDOM.render(element, container, callBack);
+    ReactDOM.hydrate(element, container, callBack);
   }
   render() {
     return (
