@@ -2,6 +2,16 @@ import React, { Component } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 class Form extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "",
+    };
+  }
+  onChangeHandelar = (event) => {
+    let newName = event.target.value;
+    this.setState({ name: newName });
+  };
   render() {
     return (
       <div className="container">
@@ -9,9 +19,11 @@ class Form extends Component {
           <div className="col-md-8">
             <h1 className="mt-5 text-secondary">My First React Form</h1>
             <div className="form">
+              <h2 className="text-secondary">{this.state.name}</h2>
               <div className="form-group">
                 <input
                   type="text"
+                  onChange={this.onChangeHandelar}
                   className="form-control mt-5"
                   placeholder="Type here"
                 ></input>
