@@ -13,13 +13,16 @@ class Form extends Component {
     let uservalue = event.target.value;
     this.setState({ [username]: uservalue });
   };
+  onSubmitHandelar = () => {
+    alert(this.state.username);
+  };
   render() {
     return (
       <div className="container">
         <div className="row justify-content-center align-items-center">
           <div className="col-md-8">
             <h1 className="mt-5 text-secondary">My First React Form</h1>
-            <div className="form">
+            <form onSubmit={this.onSubmitHandelar} className="form">
               <h2 className="text-secondary">{this.state.username}</h2>
               <div className="form-group">
                 <input
@@ -33,7 +36,7 @@ class Form extends Component {
                   Submit Now
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
