@@ -5,12 +5,13 @@ class Form extends Component {
   constructor() {
     super();
     this.state = {
-      name: "",
+      username: "",
     };
   }
   onChangeHandelar = (event) => {
-    let newName = event.target.value;
-    this.setState({ name: newName });
+    let username = event.target.name;
+    let uservalue = event.target.value;
+    this.setState({ [username]: uservalue });
   };
   render() {
     return (
@@ -19,10 +20,11 @@ class Form extends Component {
           <div className="col-md-8">
             <h1 className="mt-5 text-secondary">My First React Form</h1>
             <div className="form">
-              <h2 className="text-secondary">{this.state.name}</h2>
+              <h2 className="text-secondary">{this.state.username}</h2>
               <div className="form-group">
                 <input
                   type="text"
+                  name="username"
                   onChange={this.onChangeHandelar}
                   className="form-control mt-5"
                   placeholder="Type here"
