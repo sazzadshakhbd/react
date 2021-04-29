@@ -1,10 +1,10 @@
 import "./App.css";
-import Select from "./myComponents/Select";
+import ReactList from "./myComponents/ReactList";
 
 function App() {
   return (
     <div className="App">
-      <Select />
+      <ReactList />
     </div>
   );
 }
