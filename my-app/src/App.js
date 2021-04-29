@@ -1,10 +1,10 @@
 import "./App.css";
-import ReactList from "./myComponents/ReactList";
+import JsonList from "./myComponents/JsonList";
 
 function App() {
   return (
     <div className="App">
-      <ReactList />
+      <JsonList />
     </div>
   );
 }
