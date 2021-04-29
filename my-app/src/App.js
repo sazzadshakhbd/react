@@ -1,10 +1,10 @@
 import "./App.css";
-import Text from "./myComponents/Text";
+import Select from "./myComponents/Select";
 
 function App() {
   return (
     <div className="App">
-      <Text />
+      <Select />
     </div>
   );
 }
