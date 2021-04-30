@@ -1,12 +1,7 @@
 import "./App.css";
-import JsonList from "./myComponents/JsonList";
 
 function App() {
-  return (
-    <div className="App">
-      <JsonList />
-    </div>
-  );
+  return <div className="App">home</div>;
 }
 
 export default App;
