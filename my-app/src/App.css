@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.contactTitle {
+  background-color: aquamarine;
+  margin: 10px;
+  padding: 30px;
+  color: #fff;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
