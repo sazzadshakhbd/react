@@ -2,7 +2,17 @@ import React, { Component } from "react";
 
 class About extends Component {
   render() {
-    return <div>About</div>;
+    const aboutTitle = {
+      backgroundColor: "pink",
+      margin: "10px",
+      padding: "30px",
+      color: "white",
+    };
+    return (
+      <div>
+        <h1 style={aboutTitle}>About Page</h1>
+      </div>
+    );
   }
 }
 

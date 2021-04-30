@@ -3,7 +3,15 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1 style={{ backgroundColor: "teal", color: "white" }}>
+      <h1
+        style={{
+          backgroundColor: "teal",
+          margin: "10px",
+          padding: "30px",
+          color: "white",
+          textAlign: "left",
+        }}
+      >
         Md. Sazzad Ali Shakh
       </h1>
     </div>
