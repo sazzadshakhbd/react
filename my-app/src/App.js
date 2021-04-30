@@ -1,4 +1,5 @@
 import "./App.css";
+import "./MySass.scss";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       >
         Home Page
       </h1>
+      <h2 className="sassStyle">Sass Style Implement This Title</h2>
     </div>
   );
 }
