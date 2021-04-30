@@ -12,7 +12,7 @@ function App() {
           textAlign: "left",
         }}
       >
-        Md. Sazzad Ali Shakh
+        Home Page
       </h1>
     </div>
   );
