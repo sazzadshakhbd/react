@@ -1,10 +1,10 @@
 import "./App.css";
-import CountryList from "./myComponents/CountryList";
+import Post from "./myComponents/Post";
 
 function App() {
   return (
     <div className="App">
-      <CountryList />
+      <Post />
     </div>
   );
 }
