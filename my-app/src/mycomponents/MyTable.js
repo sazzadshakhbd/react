@@ -1,39 +1,39 @@
 import React, { Component } from "react";
 import ReactTable from "react-table-v6";
 import "../../node_modules/react-table-v6/react-table.css";
+import axios from "axios";
 
 class MyTable extends Component {
+  constructor() {
+    super();
+    this.state = {
+      TableInfos: [],
+    };
+  }
+  componentDidMount() {
+    axios
+      .get("https://restcountries.eu/rest/v2/all")
+      .then((response) => {
+        this.setState({ TableInfos: response.data });
+      })
+      .catch((error) => {
+        alert("Something Went Wrong");
+      });
+  }
   render() {
-    const tableData = [
-      {
-        Name: "Sazzad",
-        Age: 38,
-      },
-      {
-        Name: "Sazzad",
-        Age: 38,
-      },
-      {
-        Name: "Sazzad",
-        Age: 38,
-      },
-      {
-        Name: "Sazzad",
-        Age: 38,
-      },
-      {
-        Name: "Sazzad",
-        Age: 38,
-      },
-    ];
+    const tableData = this.state.TableInfos;
     const columns = [
       {
-        Header: "Name",
-        accessor: "Name",
+        Header: "Country Name",
+        accessor: "name",
       },
       {
-        Header: "Age",
-        accessor: "Age",
+        Header: "Capital",
+        accessor: "capital",
+      },
+      {
+        Header: "Population",
+        accessor: "population",
       },
     ];
     return (
@@ -41,8 +41,8 @@ class MyTable extends Component {
         <ReactTable
           data={tableData}
           columns={columns}
-          defaultPageSize={2}
-          pageSizeOptions={[2, 4, 6, 8, 10]}
+          defaultPageSize={10}
+          pageSizeOptions={[10, 20, 30, 40, 50]}
         />
       </div>
     );
