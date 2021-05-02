@@ -1,10 +1,10 @@
 import "./App.css";
-import Post from "./myComponents/Post";
+import MyTable from "./myComponents/MyTable";
 
 function App() {
   return (
     <div className="App">
-      <Post />
+      <MyTable />
     </div>
   );
 }
