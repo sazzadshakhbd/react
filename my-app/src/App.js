@@ -1,10 +1,10 @@
 import "./App.css";
-import MyTable from "./myComponents/MyTable";
+import Navigation from "./myComponents/Navigation";
 
 function App() {
   return (
     <div className="App">
-      <MyTable />
+      <Navigation />
     </div>
   );
 }
