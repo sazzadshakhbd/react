@@ -13,16 +13,16 @@ class Navigation extends Component {
       <div>
         <Navbar bg="dark" variant="dark">
           <Nav className="mr-auto">
-            <NavLink exact activeStyle={{ color: "teal" }} to="/">
+            <NavLink exact activeStyle={{ color: "white" }} to="/">
               Home
             </NavLink>
-            <NavLink exact activeStyle={{ color: "teal" }} to="/about">
+            <NavLink exact activeStyle={{ color: "white" }} to="/about">
               About
             </NavLink>
-            <NavLink exact activeStyle={{ color: "teal" }} to="/contact">
+            <NavLink exact activeStyle={{ color: "white" }} to="/contact">
               Contact
             </NavLink>
-            <NavLink exact activeStyle={{ color: "teal" }} to="/portfolio">
+            <NavLink exact activeStyle={{ color: "white" }} to="/portfolio">
               Portfolio
             </NavLink>
           </Nav>
