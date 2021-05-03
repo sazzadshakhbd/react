@@ -14,7 +14,7 @@ class About extends Component {
       <div>
         <h1 style={aboutTitle}>About Page</h1>
         <button className="btn btn-dark">
-          <Link className="text-white" to="/portfolio/sazzad">
+          <Link className="text-white" to="/portfolio/Md Sazzad Ali Shakh">
             Go Portfolio Page
           </Link>
         </button>
