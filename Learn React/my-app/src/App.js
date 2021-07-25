@@ -7,7 +7,9 @@ function App() {
       <Hello colorName="Red" personName="Sazzad"></Hello>
       <Hello colorName="Blue" personName="Marjia"></Hello>
       <Hello colorName="White" personName="Adib"></Hello>
-      <Welcome></Welcome>
+      <Welcome countryName="Bangladesh"></Welcome>
+      <Welcome countryName="Australia"></Welcome>
+      <Welcome countryName="Sweden"></Welcome>
     </div>
   );
 }
