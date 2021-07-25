@@ -5,9 +5,7 @@ function App() {
   return (
     <div className="App">
       <Hello></Hello>
-      <Welcome countryName="Bangladesh"></Welcome>
-      <Welcome countryName="Australia"></Welcome>
-      <Welcome countryName="Sweden"></Welcome>
+      <Welcome></Welcome>
     </div>
   );
 }

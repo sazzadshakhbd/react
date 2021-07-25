@@ -1,9 +1,14 @@
 import React, {Component} from 'react'
 
 class Welcome extends Component {
+  myFunc() {
+    alert('Click me from Class Component')
+  }
   render() {
     return(
-      <h1>Welcome our country in {this.props.countryName}</h1>
+      <div>
+        <button onClick={this.myFunc}>Click me from Class Component</button>
+      </div>
     )
   }
 }
