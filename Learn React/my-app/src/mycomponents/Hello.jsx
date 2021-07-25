@@ -1,7 +1,10 @@
 import React from 'react';
 function Hello(props) {
+  function clickMe() {
+    alert('Click me from functional Component')
+  }
   return(
-    <h1>ColorName: {props.colorName} And Person Name Is: {props.personName}</h1>
+    <button onClick={clickMe}>Click me from functional Component</button>
   )
 }
 export default Hello;
