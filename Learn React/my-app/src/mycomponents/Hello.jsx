@@ -1,7 +1,7 @@
 import React from 'react';
-function Hello() {
+function Hello(props) {
   return(
-    <h1>I am a functional Component</h1>
+    <h1>ColorName: {props.colorName} And Person Name Is: {props.personName}</h1>
   )
 }
 export default Hello;
