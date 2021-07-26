@@ -1,9 +1,9 @@
-import State from "./mycomponents/State";
+import NestedReact from "./mycomponents/NestedState";
 
 function App() {
   return (
     <div className="App">
-      <State></State>
+      <NestedReact></NestedReact>
     </div>
   );
 }
