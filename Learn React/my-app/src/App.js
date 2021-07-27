@@ -1,9 +1,9 @@
-import Setstate from "./mycomponents/Setstate";
+import ConditionalReturn from "./mycomponents/ConditionalReturn";
 
 function App() {
   return (
     <div className="App">
-      <Setstate></Setstate>
+      <ConditionalReturn></ConditionalReturn>
     </div>
   );
 }
