@@ -1,9 +1,9 @@
-import ConditionalReturn from "./mycomponents/ConditionalReturn";
+import VariableElements from "./mycomponents/VariableElements";
 
 function App() {
   return (
     <div className="App">
-      <ConditionalReturn></ConditionalReturn>
+      <VariableElements></VariableElements>
     </div>
   );
 }
