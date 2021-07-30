@@ -1,9 +1,9 @@
-import RenderHydrateMethod from "./mycomponents/RenderHydrateMethod";
+import FindDomeNode from "./mycomponents/FindDomeNode";
 
 function App() {
   return (
     <div className="App">
-      <RenderHydrateMethod></RenderHydrateMethod>
+      <FindDomeNode></FindDomeNode>
     </div>
   );
 }
