@@ -1,9 +1,9 @@
-import VariableElements from "./mycomponents/VariableElements";
+import Refresh from "./mycomponents/Refresh";
 
 function App() {
   return (
     <div className="App">
-      <VariableElements></VariableElements>
+      <Refresh></Refresh>
     </div>
   );
 }
