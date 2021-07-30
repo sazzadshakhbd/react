@@ -1,9 +1,9 @@
-import Refresh from "./mycomponents/Refresh";
+import RenderHydrateMethod from "./mycomponents/RenderHydrateMethod";
 
 function App() {
   return (
     <div className="App">
-      <Refresh></Refresh>
+      <RenderHydrateMethod></RenderHydrateMethod>
     </div>
   );
 }
