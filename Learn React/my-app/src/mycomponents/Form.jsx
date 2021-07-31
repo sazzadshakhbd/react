@@ -15,12 +15,16 @@ class Form extends Component {
     var y = event.target.value;
     this.setState({[x]: y})
   }
+
+  onSubmitHandler = () => {
+    alert(this.state.username)
+  }
   render(){
     return(
       <div className="container">
         <div className="row justify-content-center mt-5">
           <div className="col-md-6 bg-primary">
-            <form>
+            <form onSubmit={this.onSubmitHandler}>
               <h1 className="py-3 text-center text-white">My First Form</h1>
               <h2 className="text-center text-white">{this.state.username}</h2>
               <div className="form-group">
