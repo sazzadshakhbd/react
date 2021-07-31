@@ -2,15 +2,18 @@ import React, {Component} from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class Form extends Component {
-  constructor(){
+
+  constructor() {
     super()
     this.state = {
-      name: ' '
+      username: ' '
     }
   }
+ 
   changeText = (event) => {
-    var x = event.target.value;
-    this.setState({name: x})
+    var x = event.target.name;
+    var y = event.target.value;
+    this.setState({[x]: y})
   }
   render(){
     return(
@@ -19,9 +22,9 @@ class Form extends Component {
           <div className="col-md-6 bg-primary">
             <form>
               <h1 className="py-3 text-center text-white">My First Form</h1>
-              <h2 className="text-center text-white">{this.state.name}</h2>
+              <h2 className="text-center text-white">{this.state.username}</h2>
               <div className="form-group">
-                <input onChange={this.changeText}  type="text" className="form-control" placeholder="Your name"></input>
+                <input name="username" type="text" onChange={this.changeText} className="form-control" placeholder="Your name"></input>
               </div>
               <div className="form-group text-center">
                 <input type="submit" className="btn btn-large btn-outline-light" value="Submit Now"></input>
