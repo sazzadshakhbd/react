@@ -1,9 +1,9 @@
-import FindDomeNode from "./mycomponents/FindDomeNode";
+import Form from "./mycomponents/Form";
 
 function App() {
   return (
     <div className="App">
-      <FindDomeNode></FindDomeNode>
+      <Form></Form>
     </div>
   );
 }
