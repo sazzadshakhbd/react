@@ -17,6 +17,31 @@ class Form extends Component {
     var x = event.target.name;
     var y = event.target.value;
     this.setState({[x]:y})
+
+    if(x === 'firstName'){
+      var namePattern = /^[a-zA-Z\s]+$/;
+      if(!namePattern.test(y)){
+        this.setState({firstName: 'First name is not valid'})
+      }
+    }
+    if(x === 'lastName'){
+      var namePattern2 = /^[a-zA-Z\s]+$/;
+      if(!namePattern2.test(y)){
+        this.setState({lastName: 'Last name is not valid'})
+      }
+    }
+    if(x === 'email') {
+      var emailPattern = /^\S+@\S+\.\S+$/;
+      if(!emailPattern.test(y)){
+        this.setState({email: 'Email is not valid'})
+      }
+    }
+    if(x === 'mobileNumber') {
+      var mobileNumbers = /^[1-9]\d{9}$/;
+      if(!mobileNumbers.test(y)) {
+        this.setState({mobileNumbers: 'Mobile Number is not valid'})
+      }
+    }
   }
   
 
