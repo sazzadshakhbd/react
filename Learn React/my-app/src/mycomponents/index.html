@@ -1,0 +1,115 @@
+.listing-box .form-control {
+padding: 0.75rem 0.75rem;
+}
+.btn-invoice a {
+display: inline-flex;
+width: 85px;
+text-align: center;
+justify-content: center;
+align-items: center;
+line-height: normal;
+height: 32px;
+background-color: #2274e6;
+border-color: #2274e6;
+color: #fff;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+text-transform: uppercase;
+font-size: 12px;
+font-weight: 600;
+}
+.btn-invoice a:hover {
+color: #fff;
+background-color: #28a745;
+border-color: #28a745;
+}
+.btn-invoice .new-label span {
+position: relative;
+}
+.btn-invoice:hover .new-label span {
+display: none;
+}
+.btn-invoice:hover .new-label:after {
+content: "CLICK HERE";
+}
+.img-tooltip {
+position: relative;
+display: inline-block;
+}
+.img-tooltip .broker-tooltip {
+visibility: hidden;
+width: 300px;
+background-color: #ffffff;
+color: #3a3838;
+text-align: center;
+padding: 0;
+position: absolute;
+z-index: 1;
+bottom: 140%;
+left: 50%;
+margin-left: -150px;
+border-radius: 3px;
+box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.51);
+}
+@media screen and (max-width: 525px) {
+.img-tooltip .broker-tooltip {
+width: 245px;
+left: 72%;
+}
+}
+.img-tooltip:hover .broker-tooltip {
+visibility: visible;
+}
+.broker-info-container h3 {
+background: #000;
+margin: 0;
+padding: 5px;
+font-weight: 700;
+text-transform: uppercase;
+font-size: 15pt;
+color: #fff;
+border-radius: 3px 3px 0 0;
+}
+.broker-info-container p {
+text-align: center;
+}
+.broker-tooltip:after,
+.broker-tooltip:before {
+top: 100%;
+left: 50%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+.broker-tooltip:after {
+border-top-color: #ff9800;
+border-width: 12px;
+margin-left: -15px;
+}
+.social-share-icons {
+font-size: 12px;
+}
+.compare-buttons-area {
+display: flex;
+flex-direction: column;
+}
+@media (max-width: 1199px) {
+.display-none {
+display: none;
+}
+}
+@media (min-width: 991px) {
+.display-hide {
+display: none;
+}
+}
+@media (max-width: 767px) {
+.dis-hide {
+display: none;
+}
+.social-share-icons {
+font-size: 6px;
+}
+}

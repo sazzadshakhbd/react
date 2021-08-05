@@ -9,7 +9,8 @@ class Form extends Component {
       firstName: ' ',
       lastName: ' ',
       email: ' ',
-      mobileNumber: ' '
+      mobileNumber: ' ',
+      textarea: ''
     }
   }
  
@@ -42,6 +43,12 @@ class Form extends Component {
         this.setState({mobileNumbers: 'Mobile Number is not valid'})
       }
     }
+    if(x === 'textarea') {
+      var textareas = /^[a-zA-Z\s1-9]\d{9}]+$/;
+      if(!textareas.test(y)){
+        this.setState({x: 'this is textarea'})
+      }
+    }
   }
   
 
@@ -66,6 +73,17 @@ class Form extends Component {
               <div className="form-group">
                 <input onChange={this.onchangeHandelar} name="mobileNumber" type="number" className="form-control" placeholder="Mobile Number"></input>
               </div>
+              <div className="form-group">
+                <textarea onChange={this.onchangeHandelar} name="textarea" className="form-control" placeholder="Write here"></textarea>
+              </div>
+              <div className="form-group">
+               <select name="select">
+                 <option>Rajshahi</option>
+                 <option>Dhaka</option>
+                 <option>Sylhet</option>
+                 <option>Barishal</option>
+               </select>
+              </div>
               <div className="text-center form-group">
                 <input type="submit" className="btn btn-large btn-outline-light" value="Submit Now"></input>
               </div>
@@ -77,6 +95,7 @@ class Form extends Component {
             <h3 className="mb-3 text-white">Last Name: {this.state.lastName}</h3>
             <h3 className="mb-3 text-white">Email Address: {this.state.email}</h3>
             <h3 className="mb-3 text-white">Mobile Number: {this.state.mobileNumber}</h3>
+            <h3 className="mb-3 text-white">Textarea: {this.state.textarea}</h3>
           </div>
         </div>
       </div>
